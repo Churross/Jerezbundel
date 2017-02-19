@@ -1,0 +1,34 @@
+\documentclass[10pt,a4paper,twoside]{article}
+
+\usepackage[bw,notranslation]{tunaChords}
+\usepackage{pdfpages}
+
+
+\begin{document}
+% Voorblad
+\begin{center}
+\Huge{Festivalbundel\\voor\\Jerez}
+\end{center}
+\vspace*{\fill}
+\tableofcontents
+\vspace{1em}
+\hfill\small{Samengestelt: \today} 
+% Voeg hier meer liedjes aan toe plus aanpassen volgorde
+
+\input{songs/alma_llanera}
+\input{songs/beso}
+\input{songs/torero}
+\input{songs/aqui_esta}
+\input{songs/candidito}
+\input{songs/julio}
+\input{songs/parrandero}
+%\input{songs/e-10}
+\input{songs/recuerdos}
+\input{songs/poco_a_poco}
+%\input{songs/naranjitay}
+%\input{songs/perfidia}
+\addcontentsline{toc}{section}{11. Los Vareadores}
+\setcounter{songs}{12}
+\includepdf[pages=-]{Vareadores.pdf}
+\input{songs/rondalla}
+\end{document}
